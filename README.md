@@ -1,13 +1,20 @@
 # React组件库
-## 移动端组件
+
+致力于在web移动端实现原生APP操作体验的React组件库
 
 ### 安装
 ``` bash
 npm i vin-rc -S
 ```
 
+### 引入样式文件
+``` js
+import 'vin-rc/lib/index.css';
+```
+
 ### 1. 抽屉
 类似于高德地图中点击一个地物后从底部弹出的详情面板，可向上拖动展开，也可向下滑动收起。
+![抽屉演示](https://campus-platform.oss-cn-beijing.aliyuncs.com/img/1616773273271.gif)
 
 使用方法：
 ``` js

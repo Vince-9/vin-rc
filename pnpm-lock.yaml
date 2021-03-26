@@ -8,6 +8,7 @@ dependencies:
   less: 4.1.1
   react: 17.0.2
   rollup-plugin-babel: 4.4.0_@babel+core@7.13.10
+  rollup-plugin-dts: 3.0.1_typescript@4.2.3
   rollup-plugin-styles: 3.14.1
   rollup-plugin-typescript2: 0.30.0_typescript@4.2.3
   tslib: 2.1.0
@@ -1159,6 +1160,9 @@ packages:
       '@babel/core': ^7.0.0
       '@types/babel__core': ^7.1.9
       rollup: ^1.20.0||^2.0.0
+    peerDependenciesMeta:
+      '@types/babel__core':
+        optional: true
     resolution:
       integrity: sha1-nLHFFG3daklorZbyCcUMYvkvmHk=
       tarball: '@rollup/plugin-babel/download/@rollup/plugin-babel-5.3.0.tgz'
@@ -1683,6 +1687,11 @@ packages:
     dev: false
     engines:
       node: '>=6.0'
+    peerDependencies:
+      supports-color: '*'
+    peerDependenciesMeta:
+      supports-color:
+        optional: true
     resolution:
       integrity: sha1-8NIpxQXgxtjEmsVT0bE9wYP2su4=
       tarball: debug/download/debug-4.3.1.tgz
@@ -2325,6 +2334,13 @@ packages:
     resolution:
       integrity: sha1-ce5R+nvkyuwaY4OffmgtgTLTDK8=
       tarball: loose-envify/download/loose-envify-1.4.0.tgz
+  /magic-string/0.25.7:
+    dependencies:
+      sourcemap-codec: 1.4.8
+    dev: false
+    resolution:
+      integrity: sha1-P0l9b9NMZpxnmNy4IfLvMfVEUFE=
+      tarball: magic-string/download/magic-string-0.25.7.tgz
   /make-dir/2.1.0:
     dependencies:
       pify: 4.0.1
@@ -3207,6 +3223,21 @@ packages:
     resolution:
       integrity: sha1-J6GRvMs5ZCRsoqrUJ+h5jL6HybE=
       tarball: rollup-plugin-clear/download/rollup-plugin-clear-2.0.7.tgz
+  /rollup-plugin-dts/3.0.1_typescript@4.2.3:
+    dependencies:
+      magic-string: 0.25.7
+      typescript: 4.2.3
+    dev: false
+    engines:
+      node: '>=12'
+    optionalDependencies:
+      '@babel/code-frame': 7.12.13
+    peerDependencies:
+      rollup: ^2.40.0
+      typescript: ^4.2.3
+    resolution:
+      integrity: sha1-RBnvtR2TXMDP9vV3+KrZepgO5SQ=
+      tarball: rollup-plugin-dts/download/rollup-plugin-dts-3.0.1.tgz
   /rollup-plugin-styles/3.14.1:
     dependencies:
       '@rollup/pluginutils': 4.1.0
@@ -3320,6 +3351,11 @@ packages:
     resolution:
       integrity: sha1-UwL4FpAxc1ImVECS5kmB91F1A4M=
       tarball: source-map/download/source-map-0.7.3.tgz
+  /sourcemap-codec/1.4.8:
+    dev: false
+    resolution:
+      integrity: sha1-6oBL2UhXQC5pktBaOO8a41qatMQ=
+      tarball: sourcemap-codec/download/sourcemap-codec-1.4.8.tgz
   /split-on-first/1.1.0:
     dev: false
     engines:
@@ -3565,6 +3601,7 @@ specifiers:
   react: ^17.0.2
   rollup-plugin-babel: ^4.4.0
   rollup-plugin-clear: ^2.0.7
+  rollup-plugin-dts: ^3.0.1
   rollup-plugin-styles: ^3.14.1
   rollup-plugin-typescript2: ^0.30.0
   tslib: ^2.1.0

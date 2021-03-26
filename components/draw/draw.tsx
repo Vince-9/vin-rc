@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import * as React from 'react';
 import './style';
 
 export interface DrawProps {
@@ -29,19 +29,19 @@ export default function Draw(props: DrawProps) {
     style = {},
   } = props;
 
-  const [height, setHeight] = useState(visiable ? minHeight : 0); // 弹框的高度
-  const contentRef = useRef<HTMLDivElement>({} as HTMLDivElement);
-  const drawRef = useRef<HTMLDivElement>({} as HTMLDivElement);
-  const isTouching = useRef(false);
-  const [startY, setStartY] = useState(0);
-  const [slideStartHeight, setStartHeightY] = useState(0);
-  const [scrollStart, setScrollStart] = useState(0);
-  const touchMovePath = useRef([] as number[][]); // 记录手指滑动时最后的动作（只记录Y）
-  const isScroll = useRef(false); // 是否应该为滚动
-  const scrollTimer = useRef<number | undefined>();
-  const isHeightGoByDown = useRef(true); // 记录抽屉高度是否在拖拽过程中低于过最大高度
+  const [height, setHeight] = React.useState(visiable ? minHeight : 0); // 弹框的高度
+  const contentRef = React.useRef<HTMLDivElement>({} as HTMLDivElement);
+  const drawRef = React.useRef<HTMLDivElement>({} as HTMLDivElement);
+  const isTouching = React.useRef(false);
+  const [startY, setStartY] = React.useState(0);
+  const [slideStartHeight, setStartHeightY] = React.useState(0);
+  const [scrollStart, setScrollStart] = React.useState(0);
+  const touchMovePath = React.useRef([] as number[][]); // 记录手指滑动时最后的动作（只记录Y）
+  const isScroll = React.useRef(false); // 是否应该为滚动
+  const scrollTimer = React.useRef<number | undefined>();
+  const isHeightGoByDown = React.useRef(true); // 记录抽屉高度是否在拖拽过程中低于过最大高度
 
-  useEffect(() => {
+  React.useEffect(() => {
     if (visiable) {
       setHeightSmoothly(minHeight);
     } else {

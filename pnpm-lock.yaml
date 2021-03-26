@@ -6,7 +6,7 @@ dependencies:
   '@rollup/plugin-image': 2.0.6
   '@types/react': 17.0.3
   less: 4.1.1
-  react: 17.0.2
+  react: link:../../../../.nvm/versions/node/v15.8.0/pnpm-global/node_modules/react
   rollup-plugin-babel: 4.4.0_@babel+core@7.13.10
   rollup-plugin-dts: 3.0.1_typescript@4.2.3
   rollup-plugin-styles: 3.14.1
@@ -2326,14 +2326,6 @@ packages:
     resolution:
       integrity: sha1-Z5WRxWTDv/quhFTPCz3zcMPWkRw=
       tarball: lodash/download/lodash-4.17.21.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Flodash%2Fdownload%2Flodash-4.17.21.tgz
-  /loose-envify/1.4.0:
-    dependencies:
-      js-tokens: 4.0.0
-    dev: false
-    hasBin: true
-    resolution:
-      integrity: sha1-ce5R+nvkyuwaY4OffmgtgTLTDK8=
-      tarball: loose-envify/download/loose-envify-1.4.0.tgz
   /magic-string/0.25.7:
     dependencies:
       sourcemap-codec: 1.4.8
@@ -2472,13 +2464,6 @@ packages:
     resolution:
       integrity: sha1-sr0pXDfj3VijvwcAN2Zjuk2c8Fw=
       tarball: nth-check/download/nth-check-1.0.2.tgz
-  /object-assign/4.1.1:
-    dev: false
-    engines:
-      node: '>=0.10.0'
-    resolution:
-      integrity: sha1-IQmtx5ZYh8/AXLvUQsrIv7s2CGM=
-      tarball: object-assign/download/object-assign-4.1.1.tgz
   /object-inspect/1.9.0:
     dev: false
     resolution:
@@ -3100,16 +3085,6 @@ packages:
     resolution:
       integrity: sha1-esLcpG2n8wlEm6D4ax/SglWwyGo=
       tarball: query-string/download/query-string-6.14.1.tgz
-  /react/17.0.2:
-    dependencies:
-      loose-envify: 1.4.0
-      object-assign: 4.1.1
-    dev: false
-    engines:
-      node: '>=0.10.0'
-    resolution:
-      integrity: sha1-0LXMUW0p6z7uOD91tihkz7aAADc=
-      tarball: react/download/react-17.0.2.tgz?cache=0&sync_timestamp=1616725746733&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Freact%2Fdownload%2Freact-17.0.2.tgz
   /regenerate-unicode-properties/8.2.0:
     dependencies:
       regenerate: 1.4.2

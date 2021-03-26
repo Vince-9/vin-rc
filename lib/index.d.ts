@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 
 interface DrawProps {
     className?: string;
@@ -11,5 +11,7 @@ interface DrawProps {
 }
 declare function Draw(props: DrawProps): JSX.Element;
 
-export { Draw, DrawProps };
+declare function test(): JSX.Element;
+
+export { Draw, DrawProps, test as Test };
 //# sourceMappingURL=index.d.ts.map

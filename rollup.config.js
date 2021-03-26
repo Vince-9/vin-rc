@@ -45,7 +45,7 @@ export default [
     input: 'index.ts',
     output: {
       dir: 'lib',
-      format: 'es',
+      format: 'commonjs',
       sourcemap: true,
       assetFileNames: "[name][extname]",
     },

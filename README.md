@@ -14,6 +14,7 @@ import 'vin-rc/lib/index.css';
 
 ### 1. 抽屉
 类似于高德地图中点击一个地物后从底部弹出的详情面板，可向上拖动展开，也可向下滑动收起。
+
 ![抽屉演示](https://campus-platform.oss-cn-beijing.aliyuncs.com/img/1616773273271.gif)
 
 使用方法：

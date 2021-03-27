@@ -5,7 +5,7 @@ export interface DrawProps {
   className?: string;
   children?: React.ReactNode;
   style?: React.CSSProperties;
-  visiable?: boolean;
+  visible?: boolean;
   onClose?: () => void;
   minHeight?: number;
   maxHeight?: number;
@@ -21,7 +21,7 @@ export default function Draw(props: DrawProps) {
 
   const {
     children,
-    visiable = false,
+    visible = false,
     minHeight = 30,
     maxHeight = Math.round((viewHeight - 50) / viewHeight * 100),
     onClose,
@@ -29,7 +29,7 @@ export default function Draw(props: DrawProps) {
     style = {},
   } = props;
 
-  const [height, setHeight] = React.useState(visiable ? minHeight : 0); // 弹框的高度
+  const [height, setHeight] = React.useState(visible ? minHeight : 0); // 弹框的高度
   const contentRef = React.useRef<HTMLDivElement>({} as HTMLDivElement);
   const drawRef = React.useRef<HTMLDivElement>({} as HTMLDivElement);
   const isTouching = React.useRef(false);
@@ -42,12 +42,12 @@ export default function Draw(props: DrawProps) {
   const isHeightGoByDown = React.useRef(true); // 记录抽屉高度是否在拖拽过程中低于过最大高度
 
   React.useEffect(() => {
-    if (visiable) {
+    if (visible) {
       setHeightSmoothly(minHeight);
     } else {
       setHeightSmoothly(0);
     }
-  }, [visiable]);
+  }, [visible]);
 
 
   const onTouchStart = (e: React.TouchEvent, move?: boolean) => {

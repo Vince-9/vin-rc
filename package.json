@@ -1,6 +1,6 @@
 {
   "name": "vin-rc",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "抽屉等可拖动React移动端组件库",
   "main": "lib/index.js",
   "module": "lib/index.js",

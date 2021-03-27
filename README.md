@@ -21,12 +21,12 @@ import 'vin-rc/lib/index.css';
 ``` js
 import { Draw } from 'vin-rc';
 
-  const [drawVisiable, setDrawVisiable] = useState(false);
+  const [drawVisible, setDrawVisible] = useState(false);
 
   return (
       <Draw
-        visiable={drawVisiable}
-        onClose={() => setDrawVisiable(false)}
+        visible={drawVisible}
+        onClose={() => setDrawVisible(false)}
       >
         <div>
           <p>这是里面的内容</p>
